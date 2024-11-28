@@ -47,7 +47,8 @@ def register():
 
 @app.route("/")
 def default():
-    return redirect(url_for("login"))
+    return render_template("launch.html")
+
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
